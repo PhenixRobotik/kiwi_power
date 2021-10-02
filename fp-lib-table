@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name kiwi_power)(type KiCad)(uri ${KIPRJMOD}/kiwi_power.pretty)(options "")(descr ""))
+)

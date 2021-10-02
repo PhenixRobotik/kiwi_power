@@ -1,0 +1,196 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Fuse F3
+U 1 1 61577D85
+P 5200 3850
+AR Path="/615768D3/61577C8A/61577D85" Ref="F3"  Part="1" 
+AR Path="/615768D3/61577D27/61577D85" Ref="F4"  Part="1" 
+F 0 "F4" V 5003 3850 50  0000 C CNN
+F 1 "Fuse" V 5094 3850 50  0000 C CNN
+F 2 "Fuse:Fuse_Littelfuse_372_D8.50mm" V 5130 3850 50  0001 C CNN
+F 3 "~" H 5200 3850 50  0001 C CNN
+	1    5200 3850
+	0    1    1    0   
+$EndComp
+Text HLabel 4400 3850 0    50   Input ~ 0
+Vin+
+Wire Wire Line
+	4400 3850 5050 3850
+$Comp
+L Device:Varistor RV1
+U 1 1 61578561
+P 5700 4100
+AR Path="/615768D3/61577C8A/61578561" Ref="RV1"  Part="1" 
+AR Path="/615768D3/61577D27/61578561" Ref="RV2"  Part="1" 
+F 0 "RV2" H 5803 4146 50  0000 L CNN
+F 1 "Varistor" H 5803 4055 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D7mm_W4mm_P5mm" V 5630 4100 50  0001 C CNN
+F 3 "~" H 5700 4100 50  0001 C CNN
+	1    5700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3850 5700 3850
+Wire Wire Line
+	5700 3850 5700 3950
+$Comp
+L power:GND #PWR011
+U 1 1 61578C34
+P 5700 4400
+AR Path="/615768D3/61577C8A/61578C34" Ref="#PWR011"  Part="1" 
+AR Path="/615768D3/61577D27/61578C34" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 5700 4150 50  0001 C CNN
+F 1 "GND" H 5705 4227 50  0000 C CNN
+F 2 "" H 5700 4400 50  0001 C CNN
+F 3 "" H 5700 4400 50  0001 C CNN
+	1    5700 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4400 5700 4250
+$Comp
+L Transistor_BJT:BC327 Q1
+U 1 1 6157A305
+P 6850 4250
+AR Path="/615768D3/61577C8A/6157A305" Ref="Q1"  Part="1" 
+AR Path="/615768D3/61577D27/6157A305" Ref="Q4"  Part="1" 
+F 0 "Q4" H 7041 4204 50  0000 L CNN
+F 1 "BC327" H 7041 4295 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7050 4175 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 6850 4250 50  0001 L CNN
+	1    6850 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC327 Q3
+U 1 1 6157BF63
+P 7750 4250
+AR Path="/615768D3/61577C8A/6157BF63" Ref="Q3"  Part="1" 
+AR Path="/615768D3/61577D27/6157BF63" Ref="Q6"  Part="1" 
+F 0 "Q6" H 7941 4204 50  0000 L CNN
+F 1 "BC327" H 7941 4295 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7950 4175 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 7750 4250 50  0001 L CNN
+	1    7750 4250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 6157C91E
+P 6750 4700
+AR Path="/615768D3/61577C8A/6157C91E" Ref="R5"  Part="1" 
+AR Path="/615768D3/61577D27/6157C91E" Ref="R7"  Part="1" 
+F 0 "R7" H 6820 4746 50  0000 L CNN
+F 1 "R" H 6820 4655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6680 4700 50  0001 C CNN
+F 3 "~" H 6750 4700 50  0001 C CNN
+	1    6750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 6157CC38
+P 7850 4700
+AR Path="/615768D3/61577C8A/6157CC38" Ref="R6"  Part="1" 
+AR Path="/615768D3/61577D27/6157CC38" Ref="R8"  Part="1" 
+F 0 "R8" H 7920 4746 50  0000 L CNN
+F 1 "R" H 7920 4655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7780 4700 50  0001 C CNN
+F 3 "~" H 7850 4700 50  0001 C CNN
+	1    7850 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3850 6750 3850
+Connection ~ 5700 3850
+Wire Wire Line
+	6750 4050 6750 3850
+Connection ~ 6750 3850
+Wire Wire Line
+	6750 3850 7100 3850
+Wire Wire Line
+	7050 4250 7200 4250
+Wire Wire Line
+	7300 4150 7300 4500
+Wire Wire Line
+	7300 4500 7850 4500
+Wire Wire Line
+	7850 4500 7850 4450
+Wire Wire Line
+	7850 4500 7850 4550
+Connection ~ 7850 4500
+Wire Wire Line
+	7500 3850 7850 3850
+Wire Wire Line
+	7850 3850 7850 4050
+Wire Wire Line
+	6750 4550 6750 4500
+$Comp
+L power:GND #PWR012
+U 1 1 6157EF64
+P 6750 4850
+AR Path="/615768D3/61577C8A/6157EF64" Ref="#PWR012"  Part="1" 
+AR Path="/615768D3/61577D27/6157EF64" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 6750 4600 50  0001 C CNN
+F 1 "GND" H 6755 4677 50  0000 C CNN
+F 2 "" H 6750 4850 50  0001 C CNN
+F 3 "" H 6750 4850 50  0001 C CNN
+	1    6750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 6157F3EA
+P 7850 4850
+AR Path="/615768D3/61577C8A/6157F3EA" Ref="#PWR013"  Part="1" 
+AR Path="/615768D3/61577D27/6157F3EA" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 7850 4600 50  0001 C CNN
+F 1 "GND" H 7855 4677 50  0000 C CNN
+F 2 "" H 7850 4850 50  0001 C CNN
+F 3 "" H 7850 4850 50  0001 C CNN
+	1    7850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4500 7200 4500
+Wire Wire Line
+	7200 4500 7200 4250
+Connection ~ 6750 4500
+Wire Wire Line
+	6750 4500 6750 4450
+Connection ~ 7200 4250
+Wire Wire Line
+	7200 4250 7550 4250
+Text HLabel 8600 3850 2    50   Input ~ 0
+Vout+
+Wire Wire Line
+	8600 3850 7850 3850
+Connection ~ 7850 3850
+$Comp
+L Transistor_FET:IRF9540N Q2
+U 1 1 615807CA
+P 7300 3950
+AR Path="/615768D3/61577C8A/615807CA" Ref="Q2"  Part="1" 
+AR Path="/615768D3/61577D27/615807CA" Ref="Q5"  Part="1" 
+F 0 "Q5" V 7642 3950 50  0000 C CNN
+F 1 "IRF9540N" V 7551 3950 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7500 3875 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 7300 3950 50  0001 L CNN
+	1    7300 3950
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
