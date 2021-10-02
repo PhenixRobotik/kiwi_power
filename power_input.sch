@@ -52,25 +52,12 @@ F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 7500 3200 50  0001
 	1    7500 3200
 	0    1    1    0   
 $EndComp
-$Comp
-L pspice:DIODE D1
-U 1 1 61589E19
-P 7500 2400
-F 0 "D1" H 7500 2135 50  0000 C CNN
-F 1 "DIODE" H 7500 2226 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 7500 2400 50  0001 C CNN
-F 3 "~" H 7500 2400 50  0001 C CNN
-	1    7500 2400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7300 2400 6950 2400
 Wire Wire Line
 	6950 2400 6950 2550
 Wire Wire Line
 	6950 3000 7200 3000
-Wire Wire Line
-	7700 2400 8150 2400
 Wire Wire Line
 	8150 2400 8150 3000
 Wire Wire Line
@@ -294,17 +281,6 @@ Wire Wire Line
 	5100 2550 5300 2550
 Text Notes 5300 2150 0    50   ~ 0
 Voltage regulator optional, depending on your input voltage range and relay.\nIf omitted, short between 2 and 3
-$Comp
-L pspice:DIODE D4
-U 1 1 615897BB
-P 9400 3250
-F 0 "D4" H 9400 2985 50  0000 C CNN
-F 1 "DIODE" H 9400 3076 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 9400 3250 50  0001 C CNN
-F 3 "~" H 9400 3250 50  0001 C CNN
-	1    9400 3250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	8450 3500 8450 3250
 Wire Wire Line
@@ -364,4 +340,30 @@ F 3 "" H 5300 2850 50  0001 C CNN
 	1    5300 2850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D_ALT D1
+U 1 1 6158F843
+P 7450 2400
+F 0 "D1" H 7450 2617 50  0000 C CNN
+F 1 "D_ALT" H 7450 2526 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 7450 2400 50  0001 C CNN
+F 3 "~" H 7450 2400 50  0001 C CNN
+	1    7450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2400 8150 2400
+$Comp
+L Device:D_ALT D4
+U 1 1 6159164E
+P 9350 3250
+F 0 "D4" H 9350 3467 50  0000 C CNN
+F 1 "D_ALT" H 9350 3376 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 9350 3250 50  0001 C CNN
+F 3 "~" H 9350 3250 50  0001 C CNN
+	1    9350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3250 9600 3250
 $EndSCHEMATC
