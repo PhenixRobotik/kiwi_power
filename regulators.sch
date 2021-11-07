@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 5 9
 Title ""
 Date ""
 Rev ""
@@ -24,7 +24,7 @@ AR Path="/615A4072/6159A2FA" Ref="F6"  Part="1"
 AR Path="/615A8A94/6159A2FA" Ref="F7"  Part="1" 
 AR Path="/615A8E56/6159A2FA" Ref="F8"  Part="1" 
 AR Path="/615ABAD5/6159A2FA" Ref="F9"  Part="1" 
-F 0 "F9" V 5053 3600 50  0000 C CNN
+F 0 "F5" V 5053 3600 50  0000 C CNN
 F 1 "Fuse" V 5144 3600 50  0000 C CNN
 F 2 "Fuse:Fuse_Littelfuse_372_D8.50mm" V 5180 3600 50  0001 C CNN
 F 3 "~" H 5250 3600 50  0001 C CNN
@@ -40,7 +40,7 @@ AR Path="/615A4072/6159A911" Ref="J7"  Part="1"
 AR Path="/615A8A94/6159A911" Ref="J8"  Part="1" 
 AR Path="/615A8E56/6159A911" Ref="J9"  Part="1" 
 AR Path="/615ABAD5/6159A911" Ref="J10"  Part="1" 
-F 0 "J10" H 6180 3492 50  0000 L CNN
+F 0 "J6" H 6180 3492 50  0000 L CNN
 F 1 "Power_output" H 6180 3401 50  0000 L CNN
 F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 6100 3500 50  0001 C CNN
 F 3 "~" H 6100 3500 50  0001 C CNN
@@ -76,7 +76,7 @@ AR Path="/615A4072/615A0D04" Ref="JP4"  Part="1"
 AR Path="/615A8A94/615A0D04" Ref="JP5"  Part="1" 
 AR Path="/615A8E56/615A0D04" Ref="JP6"  Part="1" 
 AR Path="/615ABAD5/615A0D04" Ref="JP7"  Part="1" 
-F 0 "JP7" V 3096 3687 50  0000 L CNN
+F 0 "JP3" V 3096 3687 50  0000 L CNN
 F 1 "Jumper_3_Open" V 3005 3687 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3050 3600 50  0001 C CNN
 F 3 "~" H 3050 3600 50  0001 C CNN
@@ -92,7 +92,7 @@ AR Path="/615A4072/615A1E14" Ref="U3"  Part="1"
 AR Path="/615A8A94/615A1E14" Ref="U4"  Part="1" 
 AR Path="/615A8E56/615A1E14" Ref="U5"  Part="1" 
 AR Path="/615ABAD5/615A1E14" Ref="U6"  Part="1" 
-F 0 "U6" H 4175 4065 50  0000 C CNN
+F 0 "U2" H 4175 4065 50  0000 C CNN
 F 1 "lm2596_blue_board" H 4175 3974 50  0000 C CNN
 F 2 "kiwi_power:lm2596_blue_board" H 4200 3700 50  0001 C CNN
 F 3 "" H 4200 3700 50  0001 C CNN

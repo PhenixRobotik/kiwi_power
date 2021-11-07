@@ -131,9 +131,9 @@ F 3 "~" H 3900 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 2150 3800 2150
+	3450 2150 3700 2150
 Wire Wire Line
-	3450 2600 3800 2600
+	3450 2600 3700 2600
 Text Notes 3600 1650 0    50   ~ 0
 Let opened if this is a slave board
 $Comp
@@ -347,9 +347,9 @@ Wire Wire Line
 Wire Wire Line
 	4800 850  4800 1800
 Wire Wire Line
-	4500 2600 4000 2600
+	4500 2600 4100 2600
 Wire Wire Line
-	4000 2150 4800 2150
+	4000 2150 4100 2150
 $Comp
 L power:GND #PWR0101
 U 1 1 615BC419
@@ -372,4 +372,54 @@ F 3 "~" H 1600 3550 50  0001 C CNN
 	1    1600 3550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 618A1270
+P 3900 2000
+F 0 "JP?" H 3900 2185 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 3900 2094 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3900 2000 50  0001 C CNN
+F 3 "~" H 3900 2000 50  0001 C CNN
+	1    3900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 618A1720
+P 3900 2450
+F 0 "JP?" H 3900 2635 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 3900 2544 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3900 2450 50  0001 C CNN
+F 3 "~" H 3900 2450 50  0001 C CNN
+	1    3900 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2600 3700 2450
+Wire Wire Line
+	3700 2450 3800 2450
+Connection ~ 3700 2600
+Wire Wire Line
+	3700 2600 3800 2600
+Wire Wire Line
+	4000 2450 4100 2450
+Wire Wire Line
+	4100 2450 4100 2600
+Connection ~ 4100 2600
+Wire Wire Line
+	4100 2600 4000 2600
+Wire Wire Line
+	3800 2000 3700 2000
+Wire Wire Line
+	3700 2000 3700 2150
+Connection ~ 3700 2150
+Wire Wire Line
+	3700 2150 3800 2150
+Wire Wire Line
+	4000 2000 4100 2000
+Wire Wire Line
+	4100 2000 4100 2150
+Connection ~ 4100 2150
+Wire Wire Line
+	4100 2150 4800 2150
 $EndSCHEMATC

@@ -13,34 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2400 4200 0    50   Input ~ 0
-Valim+
-Text HLabel 2400 2550 0    50   Input ~ 0
-Vbatt+
-$Sheet
-S 3050 2350 1400 700 
-U 61577C8A
-F0 "input_bloc" 50
-F1 "input_bloc.sch" 50
-F2 "Vin+" I L 3050 2550 50 
-F3 "Vout+" I R 4450 2550 50 
-$EndSheet
-$Sheet
-S 3050 4050 1400 700 
-U 61577D27
-F0 "sheet61577D25" 50
-F1 "input_bloc.sch" 50
-F2 "Vin+" I L 3050 4200 50 
-F3 "Vout+" I R 4450 4200 50 
-$EndSheet
-Wire Wire Line
-	3050 4200 2400 4200
-Wire Wire Line
-	2400 2550 3050 2550
-Wire Wire Line
-	4450 2550 4850 2550
-Wire Wire Line
-	4850 4200 4450 4200
 $Comp
 L Relay:SANYOU_SRD_Form_C K1
 U 1 1 615877F9
@@ -80,17 +52,9 @@ F 3 "~" H 6650 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4850 2550 4850 3400
-Wire Wire Line
-	6500 3400 4850 3400
-Connection ~ 4850 3400
-Wire Wire Line
-	4850 3400 4850 4200
-Wire Wire Line
 	8600 3500 8450 3500
 Wire Wire Line
 	8600 4200 8250 4200
-Connection ~ 4850 4200
 Wire Wire Line
 	8600 3000 8150 3000
 Connection ~ 8150 3000
@@ -105,8 +69,6 @@ F 3 "~" H 6650 4200 50  0001 C CNN
 	1    6650 4200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6500 4200 4850 4200
 NoConn ~ 7800 3300
 Text Notes 8300 2650 0    50   ~ 0
 Type A is also ok\npick a relay in your voltage ranges
@@ -197,9 +159,6 @@ Wire Wire Line
 Connection ~ 6950 2550
 Wire Wire Line
 	6950 2550 6950 3000
-Wire Wire Line
-	4850 2550 5100 2550
-Connection ~ 4850 2550
 $Comp
 L Device:R R1
 U 1 1 615B3279
@@ -276,7 +235,6 @@ F 3 "~" H 5100 2550 50  0001 C CNN
 	1    5100 2550
 	1    0    0    -1  
 $EndComp
-Connection ~ 5100 2550
 Wire Wire Line
 	5100 2550 5300 2550
 Text Notes 5300 2150 0    50   ~ 0
@@ -346,7 +304,7 @@ U 1 1 6158F843
 P 7450 2400
 F 0 "D1" H 7450 2617 50  0000 C CNN
 F 1 "D_ALT" H 7450 2526 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 7450 2400 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal" H 7450 2400 50  0001 C CNN
 F 3 "~" H 7450 2400 50  0001 C CNN
 	1    7450 2400
 	1    0    0    -1  
@@ -359,11 +317,105 @@ U 1 1 6159164E
 P 9350 3250
 F 0 "D4" H 9350 3467 50  0000 C CNN
 F 1 "D_ALT" H 9350 3376 50  0000 C CNN
-F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 9350 3250 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P10.16mm_Horizontal" H 9350 3250 50  0001 C CNN
 F 3 "~" H 9350 3250 50  0001 C CNN
 	1    9350 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9500 3250 9600 3250
+Wire Wire Line
+	1800 2550 2450 2550
+Text HLabel 1800 2550 0    50   Input ~ 0
+Vbatt+
+Wire Wire Line
+	2450 4200 1800 4200
+Text HLabel 1800 4200 0    50   Input ~ 0
+Valim+
+$Sheet
+S 2450 4050 1400 700 
+U 61577D27
+F0 "sheet61577D25" 50
+F1 "input_bloc.sch" 50
+F2 "Vin+" I L 2450 4200 50 
+F3 "Vout+" I R 3850 4200 50 
+$EndSheet
+$Sheet
+S 2450 2350 1400 700 
+U 61577C8A
+F0 "input_bloc" 50
+F1 "input_bloc.sch" 50
+F2 "Vin+" I L 2450 2550 50 
+F3 "Vout+" I R 3850 2550 50 
+$EndSheet
+$Comp
+L Diode:C3D16060D D5
+U 1 1 61875294
+P 4650 3400
+F 0 "D5" H 4650 3717 50  0000 C CNN
+F 1 "C3D16060D" H 4650 3626 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4650 3225 50  0001 C CNN
+F 3 "https://www.wolfspeed.com/media/downloads/98/C3D16060D.pdf" H 4650 3400 50  0001 C CNN
+	1    4650 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4200 5250 4200
+Wire Wire Line
+	5250 4200 5250 3400
+Connection ~ 5250 3400
+Wire Wire Line
+	5250 3400 6500 3400
+Wire Wire Line
+	4850 3400 4950 3400
+Wire Wire Line
+	4950 3400 4950 2550
+Wire Wire Line
+	4950 2550 5100 2550
+Connection ~ 5100 2550
+Wire Wire Line
+	4950 3400 5050 3400
+Connection ~ 4950 3400
+Wire Wire Line
+	3850 2550 4250 2550
+Wire Wire Line
+	4250 2550 4250 3300
+Wire Wire Line
+	4250 3300 4450 3300
+Wire Wire Line
+	3850 4200 4250 4200
+Wire Wire Line
+	4250 4200 4250 3500
+Wire Wire Line
+	4250 3500 4450 3500
+$Comp
+L Device:Varistor RV?
+U 1 1 6185C8B4
+P 5050 3650
+AR Path="/615768D3/61577C8A/6185C8B4" Ref="RV?"  Part="1" 
+AR Path="/615768D3/61577D27/6185C8B4" Ref="RV?"  Part="1" 
+AR Path="/615768D3/6185C8B4" Ref="RV3"  Part="1" 
+F 0 "RV3" H 5153 3696 50  0000 L CNN
+F 1 "Varistor" H 5153 3605 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D7mm_W4mm_P5mm" V 4980 3650 50  0001 C CNN
+F 3 "~" H 5050 3650 50  0001 C CNN
+	1    5050 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3500 5050 3400
+Connection ~ 5050 3400
+Wire Wire Line
+	5050 3400 5250 3400
+$Comp
+L power:GND #PWR0104
+U 1 1 6185E76B
+P 5050 3800
+F 0 "#PWR0104" H 5050 3550 50  0001 C CNN
+F 1 "GND" H 5055 3627 50  0000 C CNN
+F 2 "" H 5050 3800 50  0001 C CNN
+F 3 "" H 5050 3800 50  0001 C CNN
+	1    5050 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
